@@ -18,9 +18,7 @@ const manifest = {
   display: "standalone",
   background_color: "#eeeeee",
   theme_color: "#ffffff",
-  const SUPABASE_URL = "https://supabase.co";
-const SUPABASE_ANON_KEY = "sb_publishable_FG2zJVhatVPf--zojQfVog_6uF7q2fv";
-const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+ 
   icons: [
     { src: "https://img.icons8.com/color/192/construction-worker.png", sizes: "192x192", type: "image/png" },
     { src: "https://img.icons8.com/color/512/construction-worker.png", sizes: "512x512", type: "image/png" }
@@ -3559,7 +3557,9 @@ h2, h3 { font-family: 'Bebas Neue', Impact, sans-serif !important; letter-spacin
   const reactRoot = ReactDOM.createRoot(domRoot);
   reactRoot.render(React.createElement(App, null));
 })();
-
+const SUPABASE_URL = "https://supabase.co";
+const SUPABASE_ANON_KEY = "sb_publishable_FG2zJVhatVPf--zojQfVog_6uF7q2fv";
+const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 </script>
 </body>
 </html>
