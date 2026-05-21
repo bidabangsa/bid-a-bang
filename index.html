@@ -10,7 +10,8 @@
 <title>BidABang Obras Viales</title>
 <script>
 <script src="https://jsdelivr.net"></script>
-// Inject PWA manifest as blob so Chrome shows install button
+<script>
+  // Inject PWA manifest as blob so Chrome shows install button
 const manifest = {
   name: "BidABang Obras Viales",
   short_name: "BidABang",
@@ -29,6 +30,7 @@ const link = document.createElement("link");
 link.rel = "manifest";
 link.href = URL.createObjectURL(blob);
 document.currentScript.after(link);
+</script>
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
